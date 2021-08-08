@@ -1,14 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+/** @jsxImportSource @emotion/react */
+import { jsx, css } from "@emotion/react";
+import styled from "@emotion/styled";
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
+        <StyledText>
           Edit <code>src/App.js</code> and save to reload.
-        </p>
+        </StyledText>
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -23,3 +26,7 @@ function App() {
 }
 
 export default App;
+
+const StyledText = styled.div`
+  color: pink;
+`;
