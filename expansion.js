@@ -1,3 +1,4 @@
+//모달 창 관련 js
 // Get the modal
 var modal = document.getElementById("myModal");
 
