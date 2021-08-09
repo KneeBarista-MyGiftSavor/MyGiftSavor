@@ -3,151 +3,27 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=divce-width, initial-scale=1.0"/>
-    <title>민경원</title>
-    <!--
+    <title>민경원 카드 하나 화면</title>
+
     <link rel="stylesheet" href="expansion.css"/>
-    <script src="expansion.js" defer>
-    </script>
-    -->
-    <style>
-      .all{
-        background-color: #F0F1EC;
-      }
-
-      #top {
-        margin-top: 100px;
-        margin-bottom: 0px;
-        //border: 5px solid gray;
-
-      }
-
-      #grid{
-        //border:5px solid pink;
-        display:grid;
-        grid-template-columns: 1fr 1fr 1fr;
-      }
-      #grid1{
-        //border:5px solid orange;
-        display:grid;
-        grid-template-columns: 1fr 1fr;
-        margin-top: 10px;
-      }
-
-      #left{
-        //border: 5px solid red;
-      }
-      #main{
-        height:400px;
-        //background-color: #F0F1EC;
-        background-color: white;
-        padding: 10px;
-        color: black;
-        border: 1px solid white;
-        border-radius: 5px;
-        width:300px;
-        height:450px;
-        margin-left: 10px;
-        margin-right: 10px;
-        display: block;
-      }
-      #displayimg{
-        margin-left:25px;
-        margin-top: 0px;
-        border: 1px solid #F0F1EC;
-        border-radius: 5px;
-        width: 250px;
-        height: 270px;
-
-      }
-      #right{
-        //border: 5px solid blue;
-      }
-      #bottom{
-        //border: 5px solid yellow;
-        margin-bottom: 0px;
-      }
-
-      #completion {
-        margin:0px 10px 0px 25px;
-        background-color: #FEC627;
-        border: 0px;
-        border-radius: 5px;
-        color:white;
-        height: 40px;
-        font-weight: bold;
-      }
-
-      #extension{
-        margin:0px 25px 0px 10px;
-        background-color: #FEC627;
-        border: 0px;
-        border-radius: 5px;
-        color:white;
-        height: 40px;
-        font-weight: bold;
-      }
-      /* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content */
-.modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-}
-
-/* The Close Button */
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-    </style>
-
 
   </head>
 
   <body class="all">
-
-
     <header id="top">
       <!--<h1>top</h1>-->
     </header>
-
     <section id="grid">
       <div id="left">
       <!--<h1>left</h1>-->
       </div>
       <section id="main">
-        <h3 style="margin-left:25px">기프티콘 이름</h3>
+        <h3 class="deadline">기프티콘 이름</h3>
 <!--<span class="close">&times;</span>-->
-        <!--사진 입력? 버튼?-->
+        <!--사진 띄우는 -->
         <img id="displayimg" src="gift.jpg"/>
         <br>
-        <h3 style="margin-left:25px; margin-bottom:10px; margin-top:10px;">사용 기한: </h3>
+        <h3 class="deadline">사용 기한: </h3>
         <div id="grid1">
           <input id ="completion" type="button" value="사용 완료" onclick="
           document.getElementById('extension').disabled=true;
@@ -168,38 +44,8 @@
             </div>
 
           </div>
-
-          <script>
-          // Get the modal
-          var modal = document.getElementById("myModal");
-
-          // Get the button that opens the modal
-          var btn = document.getElementById("extension");
-
-          // Get the <span> element that closes the modal
-          var span = document.getElementsByClassName("close")[0];
-
-          // When the user clicks the button, open the modal
-          btn.onclick = function() {
-            modal.style.display = "block";
-          }
-
-          // When the user clicks on <span> (x), close the modal
-          span.onclick = function() {
-            modal.style.display = "none";
-          }
-
-          // When the user clicks anywhere outside of the modal, close it
-          window.onclick = function(event) {
-            if (event.target == modal) {
-              modal.style.display = "none";
-            }
-          }
-          </script>
-
-
-
-
+          <script src="expansion.js" defer></script>
+        
         </div>
       </section>
       <section id="right">
