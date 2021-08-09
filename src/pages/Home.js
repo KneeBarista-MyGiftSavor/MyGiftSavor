@@ -3,7 +3,7 @@ import { jsx, css } from "@emotion/react";
 import styled from "@emotion/styled";
 
 const Home = () => {
-  return <Wrapper>hihiplz</Wrapper>;
+  return <Wrapper>hihiplzplz</Wrapper>;
 };
 
 export default Home;
