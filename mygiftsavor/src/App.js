@@ -29,7 +29,7 @@ function App() {
    ];
    return (
       <div>
-         <Button>추가</Button>
+         <Button>추</Button>
          <Card>
             <div className="gifts">
                <GiftList>
