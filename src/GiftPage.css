@@ -1,0 +1,112 @@
+.all {
+   background-color: #f0f1ec;
+}
+
+#top {
+   margin-top: 100px;
+   margin-bottom: 0px;
+}
+
+#grid {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+}
+#grid1 {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   margin-top: 10px;
+}
+
+#main {
+   height: 400px;
+   background-color: #f0f1ec;
+   background-color: white;
+   padding: 10px;
+   color: black;
+   border: 1px solid white;
+   border-radius: 5px;
+   width: 300px;
+   height: 450px;
+   margin-left: 10px;
+   margin-right: 10px;
+   display: block;
+}
+#displayimg {
+   margin-left: 25px;
+   margin-top: 0px;
+   border: 1px solid #f0f1ec;
+   border-radius: 5px;
+   width: 250px;
+   height: 270px;
+}
+
+#bottom {
+   margin-bottom: 0px;
+}
+
+#completion {
+   margin: 0px 10px 0px 25px;
+   background-color: #fec627;
+   border: 0px;
+   border-radius: 5px;
+   color: white;
+   height: 40px;
+   font-weight: bold;
+}
+
+#extension {
+   margin: 0px 25px 0px 10px;
+   background-color: #fec627;
+   border: 0px;
+   border-radius: 5px;
+   color: white;
+   height: 40px;
+   font-weight: bold;
+}
+
+.deadline {
+   margin-left: 25px;
+   margin-bottom: 10px;
+   margin-top: 10px;
+}
+
+/* The Modal (background) */
+.modal {
+   display: none; /* Hidden by default */
+   position: fixed; /* Stay in place */
+   z-index: 1; /* Sit on top */
+   padding-top: 100px; /* Location of the box */
+   padding-left: 200px;
+   left: 0;
+   top: 0;
+   width: 100%; /* Full width */
+   height: 100%; /* Full height */
+   overflow: auto; /* Enable scroll if needed */
+   background-color: rgb(0, 0, 0); /* Fallback color */
+   background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+   display: flex;
+   align-items: center;
+   background-color: #fefefe;
+   margin: auto;
+   padding: 20px;
+   border: 1px solid #888;
+   width: 80%;
+}
+/* The Close Button */
+.close {
+   color: #aaaaaa;
+   float: right;
+   font-size: 28px;
+   font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+   color: #000;
+   text-decoration: none;
+   cursor: pointer;
+}
