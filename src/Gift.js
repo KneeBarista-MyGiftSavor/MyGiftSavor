@@ -30,7 +30,7 @@ const GiftItem = styled.div`
    color: black;
    box-shadow: 2px 4px 25px 5px lightgray;
    &:hover {
-      transform: scale(1.03);
+      transform: scale(1.05);
       transition: transform 500ms cubic-bezier(0.165, 0.84, 0.44, 1) 0ms;
    }
 `;
@@ -51,6 +51,7 @@ const Title = styled.h1`
 const DeadLine = styled.h2`
    font-size: 18px;
    font-weight: 550;
+   color: gray;
    padding: 5px;
    padding-left: 0;
    margin: 0;
