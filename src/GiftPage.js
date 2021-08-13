@@ -17,7 +17,7 @@ function GiftPage() {
       <div id="grid">
          <div id="main">
             <h3 className="deadline">기프티콘 이름</h3>
-            <span class="close">&times;</span>
+            <span className="close">&times;</span>
             <img id="displayimg" src="gift.jpg" />
             <h3 className="deadline">사용 기한: </h3>
             <div id="grid1">
@@ -25,7 +25,7 @@ function GiftPage() {
                   id="completion"
                   type="button"
                   defaultValue="사용 완료"
-                  onclick="document.getElementById('extension').disabled=true;"
+                  onClick="document.getElementById('extension').disabled=true;"
                />
                <button id="extension" onClick={openModal}>
                   기간 연장

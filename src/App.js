@@ -1,6 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Gift from './Gift';
-import { GoPlusSmall } from 'react-icons/go';
 import { jsx, css } from '@emotion/react';
 import styled from '@emotion/styled';
 
@@ -27,18 +26,17 @@ function App() {
          image: 'https://nory.cc/ko/social/kakaotalk/gifticon/assets/img/meme10.png',
       },
    ];
+
    return (
       <div>
          <Button>추가</Button>
-         <Card>
-            <div className="gifts">
-               <GiftList>
-                  {gifts.map((gift) => {
-                     return <Gift title={gift.title} image={gift.image} />;
-                  })}
-               </GiftList>
-            </div>
-         </Card>
+         <div className="gifts">
+            <GiftList>
+               {gifts.map((gift) => {
+                  return <Gift title={gift.title} image={gift.image} />;
+               })}
+            </GiftList>
+         </div>
       </div>
    );
 }
@@ -46,16 +44,12 @@ function App() {
 export default App;
 
 const GiftList = styled.div`
-   display: flex;
-   justify-content: space-between;
-   align-items: flex-start;
-   flex-wrap: wrap;
-   flex-direction: row;
-   padding: 50px;
-   padding-top: 70px;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   justify-items: center;
+   padding: 70px;
+   padding-top: 100px;
 `;
-
-const Card = styled.div``;
 
 const Button = styled.button`
    background-color: #fec627;
