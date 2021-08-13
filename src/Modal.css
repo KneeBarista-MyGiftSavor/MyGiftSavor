@@ -1,0 +1,62 @@
+.modal {
+   display: none;
+   background-color: rgba(0, 0, 0, 0.6);
+}
+.modal button {
+   outline: none;
+   cursor: pointer;
+   border: 0;
+}
+.modal > div {
+   width: 90%;
+   max-width: 450px;
+   height: 300px;
+   display: flex;
+   flex-direction: column;
+   margin: 0;
+   border-radius: 0.3rem;
+   background-color: #fff;
+   animation: modal-show 0.5s;
+}
+.modal > div > header {
+   position: relative;
+   padding: 16px 64px 16px 16px;
+   background-color: #f1f1f1;
+   font-weight: 700;
+}
+.modal > div > header button {
+   position: absolute;
+   top: 15px;
+   right: 15px;
+   width: 30px;
+   font-size: 21px;
+   font-weight: 700;
+   text-align: center;
+   color: #999;
+   background-color: transparent;
+}
+
+.modal > div > main {
+   padding: 16px;
+   border-bottom: 1px solid #dee2e6;
+   border-top: 1px solid #dee2e6;
+}
+
+.modal > div > div {
+   padding: 12px 16px;
+   text-align: right;
+}
+
+.modal > div > div button {
+   padding: 6px 12px;
+   color: #fff;
+   background-color: #6c757d;
+   border-radius: 5px;
+   font-size: 13px;
+}
+
+.modal.openModal {
+   display: flex;
+   align-items: center;
+   animation: modal-bg-show 0.3s;
+}
