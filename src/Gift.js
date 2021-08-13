@@ -5,8 +5,9 @@ import styled from '@emotion/styled';
 function Gift({ image, title }) {
    return (
       <GiftItem>
-         <h1>{title}</h1>
-         <img src={image} />
+         <Title>{title}</Title>
+         <DeadLine>만료일: </DeadLine>
+         <StyledImage src={image} />
       </GiftItem>
    );
 }
@@ -14,23 +15,43 @@ function Gift({ image, title }) {
 export default Gift;
 
 const GiftItem = styled.div`
-   min-width: 400px;
-   width: 200px;
-   height: 500px;
+   min-width: 290px;
+   width: 290px;
+   height: 470px;
    background-color: white;
    margin-bottom: 70px;
    display: flex;
    flex-wrap: wrap;
-
    align-items: flex-start;
-   justify-content: space-between;
+   align-content: flex-start;
    font-weight: 200;
    padding: 20px;
    border-radius: 5px;
    color: black;
-   box-shadow: 4px 3px 20px 1px gray;
+   box-shadow: 2px 4px 25px 5px lightgray;
    &:hover {
-      transform: scale(1.01);
+      transform: scale(1.03);
       transition: transform 500ms cubic-bezier(0.165, 0.84, 0.44, 1) 0ms;
    }
+`;
+
+const StyledImage = styled.img`
+   width: 290px;
+   height: 410px;
+   border-radius: 2px;
+`;
+
+const Title = styled.h1`
+   width: 290px;
+   margin: 0;
+   font-size: 24px;
+   font-weight: 550;
+`;
+
+const DeadLine = styled.h2`
+   font-size: 18px;
+   font-weight: 550;
+   padding: 5px;
+   padding-left: 0;
+   margin: 0;
 `;
