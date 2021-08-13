@@ -7,7 +7,7 @@ const AppMain = () => {
   return (
     <Router>
       <Switch>
-        <Route path="/save">
+        <Route path="/gifticon">
           <Save />
         </Route>
         <Route exact path="/">
