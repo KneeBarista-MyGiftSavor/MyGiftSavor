@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './GiftPage.css';
-import Modal from './Modal';
+import Modal from '../Modal';
 import './Modal.css';
 
 function GiftPage() {

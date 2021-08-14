@@ -5,6 +5,7 @@ import React, { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
 import axios from 'axios';
 import NavBar from '../components/NavBar';
+import Gifticons from '../components/Gifticons';
 
 const API_END_POINT = '3.36.73.136:8080';
 
@@ -47,19 +48,8 @@ const Home = () => {
       <Wrapper>
          <div>This is root page</div>
          {!giftList && <div>선물을 등록해보세요!</div>}
-         {giftList &&
-            giftList.map((item) => {
-               <div
-                  style={{
-                     width: '200px',
-                     height: '350px',
-                     backgroundColor: 'yellowgreen',
-                  }}
-               >
-                  기프티콘
-               </div>;
-            })}
-
+         {giftList && <Gifticons />}
+         <Gifticons />
          {/* <Login /> */}
          <NavBar />
          <button
