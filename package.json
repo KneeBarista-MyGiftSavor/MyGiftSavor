@@ -40,10 +40,5 @@
          "last 1 firefox version",
          "last 1 safari version"
       ]
-   },
-   "proxy": {
-      "*": {
-         "target": "http://3.36.73.136:8080"
-      }
    }
 }
