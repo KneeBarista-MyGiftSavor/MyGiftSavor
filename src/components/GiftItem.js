@@ -2,19 +2,19 @@ import React from 'react';
 import { jsx, css } from '@emotion/react';
 import styled from '@emotion/styled';
 
-function Gift({ image, title }) {
+function GiftItem({ image, title }) {
    return (
-      <GiftItem>
+      <Gift>
          <Title>{title}</Title>
          <DeadLine>만료일: </DeadLine>
          <StyledImage src={image} />
-      </GiftItem>
+      </Gift>
    );
 }
 
-export default Gift;
+export default GiftItem;
 
-const GiftItem = styled.div`
+const Gift = styled.div`
    min-width: 290px;
    width: 330px;
    height: 520px;
