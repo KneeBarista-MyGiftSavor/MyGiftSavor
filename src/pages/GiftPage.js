@@ -2,9 +2,9 @@
 import { jsx, css } from "@emotion/react";
 import styled from "@emotion/styled";
 import React, { useState } from 'react';
-//import './GiftPage.css';
+//import './GiftPage.css'; 
 //import Modal from './Modal';
-//import './Modal.css';
+//import './Modal.css'; //emotion이용해서 css-in-js로 변경함.
 import { Modal, Button } from 'antd';
 
 
